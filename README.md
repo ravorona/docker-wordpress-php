@@ -3,4 +3,4 @@ Docker [PHP image](https://hub.docker.com/_/php) with [PHP-FPM](https://php-fpm.
 
 ## Available tags
 - latest
-- php-7.3-release-1.0.0
+- 7.3-release-1.0.0
