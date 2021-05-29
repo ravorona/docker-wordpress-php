@@ -52,9 +52,6 @@ RUN { \
 # Configure GD
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg
 
-# Configure ZIP
-RUN docker-php-ext-configure zip --with-libzip
-
 # Install PHP extensions
 RUN docker-php-ext-install -j "$(nproc)" \
   gd \
