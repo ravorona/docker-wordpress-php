@@ -1,15 +1,15 @@
-FROM php:7.3-fpm
+FROM php:7.4-fpm
 
 # Define composer env vars
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME /tmp
 ENV COMPOSER_CACHE_DIR /var/cache
-ENV COMPOSER_VERSION 1.9.0
+ENV COMPOSER_VERSION 2.0.14
 
 # Update available package list from APT Repository
 RUN apt-get update -y
 
-# Install packages from APT
+# Install packages
 RUN apt-get install -q -y --no-install-recommends \
   ca-certificates \
   curl \
