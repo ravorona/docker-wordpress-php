@@ -50,10 +50,7 @@ RUN { \
   } > $PHP_INI_DIR/opcache-recommended.ini
 
 # Configure GD
-RUN docker-php-ext-configure gd \
-  --with-freetype-dir=/usr/include/ \
-  --with-jpeg-dir=/usr/include/ \
-  --with-png-dir=/usr
+RUN docker-php-ext-configure gd --with-freetype --with-jpeg
 
 # Configure ZIP
 RUN docker-php-ext-configure zip --with-libzip
